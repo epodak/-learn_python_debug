@@ -40,3 +40,24 @@ class LinkedList:
         while second_last_node.next.next:
             second_last_node = second_last_node.next
         second_last_node.next = None
+
+node = Node(10)
+print(node.next)
+linked_list = LinkedList()
+
+linked_list.insert_at_beginning(20)
+
+linked_list.insert_at_beginning(30)
+
+linked_list.insert_at_end(40)
+
+linked_list.insert_at_end(50)
+
+linked_list.delete_head_node()
+
+linked_list.delete_last_node()
+
+print(linked_list.head.data)
+
+print(linked_list.head.next.data)
+
